@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Unmask</title>
+    <link href="https://fonts.googleapis.com/css?family=Barlow:200,300,400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/screen.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <header>
+        <nav id="navbar" class="navbar">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#maynav"
+                    onclick="openNav()">
+                    <span class="bar-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button>
+              
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png">
+                </a>
+                <figure> <img src="images/search-bar.png"></figure>
+
+            </div>
+
+        </nav>
+        <div id="myNav" class="menu-overlay">
+            <div class="inner-menu-dropdown">
+                <div class="overlay-content">
+                    <ul>
+                        <li><a class="button16" href="index.html"><span>Home</span></a></li>
+                        <li><a href="blog.html"><span>Post</span></a></li>
+                        <li class="add-more-link">
+                            <a href="news.html"><span>News</span></a>
+                        </li>
+                        <li><a href="about_us.html"><span>About Us</span></a></li>
+                        <li><a href="contact.html"><span>Contact</span></a></li>
+                        <li><a href="login.html"><span>SignUp</span></a></li>
+                    </ul>
+                    <ul class="social-link">
+
+                        <li><a href="news.html"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="about_us.html"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="contact.html"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                    <img src="images/cross.png">
+                </a>
+
+            </div>
+        </div>
+    </header>
+    <section class="">
+
+        <img src="images/blog.jpg">
+      </section>
+    <section class="pt-5 pb-5">
+        <div class="container z-index-2 position-relative">
+            <div class="float-right">
+                <a href="" class="btn btn-primary">Add New Post</a>
+            </div>
+            <div class="heading_title">
+                <h3>Latest Feed</h3>
+            </div>
+            <div class="feed-container">
+                <img src="images/post.png">
+                <img src="images/post.png">
+                <img src="images/post.png">
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="newsletter_bg ">
+        <div class="container">
+            <div class="newsletter-block">
+                <h6 class="">Sign up for Latest Feeds and News</h6>
+                <div class="input-group mb-3 form-container">
+                    <input type="text" class="form-control" placeholder="Enter your email address">
+                    <div class="input-group-prepend">
+                        <button class="btn btn-primary btn-subscribe" type=" " id=" ">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <div class="footer-bottom">
+            <div class="container ">
+                    
+                    <ul class="footer_link float-right">
+                        <li><a href="#">Home </a></li>
+                        <li><a href="#">Contact Us </a></li>
+                        <li><a href="#">Cookie and Policies  </a></li>
+                        <li><a href="#">Terms and Condition    </a></li>
+                    </ul>
+                    <span><a href="#"> 2018 All rights reserved - Designed By CTS</a></span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        $(".carousel-control").on("click", function() {
+		$('.carousel-caption').removeClass('aos-animate');
+		setTimeout(function() {
+			$('.carousel-caption').addClass('aos-animate');
+		}, 800);
+	});
+    $("#banner-slider").on( 'slid.bs.carousel', function (){
+        $('.carousel-caption').removeClass('aos-animate');	
+        setTimeout(function() {
+			$('.carousel-caption').addClass('aos-animate');
+		}, 800);
+    });
+    </script>
+    <script>
+        // this function is use to toggle menu full width
+        function openNav() {
+            $("body").addClass("open_menu");
+            $("body").removeClass("close_menu")
+        }
+        function closeNav() {
+            $("body").removeClass("open_menu");
+            $("body").addClass("close_menu")
+        }
+    </script>
+
+</body>
+
+</html>
